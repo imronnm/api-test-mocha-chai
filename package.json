@@ -1,0 +1,26 @@
+{
+  "name": "api-test-mocha-chai",
+  "version": "1.0.0",
+  "description": "mocha chai",
+  "main": "index.js",
+  "scripts": {
+    "test get": "mocha",
+    "test petstore": "mocha --spec test/chaiAssert.js --reporter mochawesome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imronnm/api-test-mocha-chai.git"
+  },
+  "author": "imron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/imronnm/api-test-mocha-chai/issues"
+  },
+  "homepage": "https://github.com/imronnm/api-test-mocha-chai#readme",
+  "dependencies": {
+    "chai": "^4.3.10",
+    "mocha": "^10.2.0",
+    "mochawesome": "^7.1.3",
+    "supertest": "^6.3.3"
+  }
+}

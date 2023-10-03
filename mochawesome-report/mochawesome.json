@@ -1,0 +1,170 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 3,
+    "passes": 0,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-10-03T16:33:14.369Z",
+    "end": "2023-10-03T16:33:15.499Z",
+    "duration": 1130,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c125a6ea-a14d-457e-89cd-2896dd5c5ef1",
+      "title": "",
+      "fullFile": "",
+      "file": "",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d301f18b-c0b6-4c7f-a074-34b88bd679e7",
+          "title": "chai assert - get example",
+          "fullFile": "D:\\api-test-mocha-chai\\test\\chaiAssert.js",
+          "file": "\\test\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equal to 200",
+              "fullTitle": "chai assert - get example response status equal to 200",
+              "timedOut": false,
+              "duration": 2,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).status).to.equal(200)",
+              "err": {
+                "message": "AssertionError: expected undefined to equal 200",
+                "estack": "AssertionError: expected undefined to equal 200\n    at Context.<anonymous> (test\\chaiAssert.js:8:44)",
+                "diff": null
+              },
+              "uuid": "130326c8-b0ef-4687-a384-f7cdd0058781",
+              "parentUUID": "d301f18b-c0b6-4c7f-a074-34b88bd679e7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "response body to have property",
+              "fullTitle": "chai assert - get example response body to have property",
+              "timedOut": false,
+              "duration": 0,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty('available')\nexpect((await response).body).to.haveOwnProperty('unavailable')\nexpect((await response).body).to.haveOwnProperty('pending')\nexpect((await response).body).to.haveOwnProperty('status')",
+              "err": {
+                "message": "AssertionError: Target cannot be null or undefined.",
+                "estack": "AssertionError: Target cannot be null or undefined.\n    at Context.<anonymous> (test\\chaiAssert.js:11:42)",
+                "diff": null
+              },
+              "uuid": "90513b41-7b26-4bd9-a9c8-c8d79af30027",
+              "parentUUID": "d301f18b-c0b6-4c7f-a074-34b88bd679e7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "130326c8-b0ef-4687-a384-f7cdd0058781",
+            "90513b41-7b26-4bd9-a9c8-c8d79af30027"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "ff17cca8-e406-4c2c-a2a0-18856719d3db",
+          "title": "Post request example",
+          "fullFile": "D:\\api-test-mocha-chai\\test\\chaiAssert.js",
+          "file": "\\test\\chaiAssert.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "response status equa to 200",
+              "fullTitle": "Post request example response status equa to 200",
+              "timedOut": false,
+              "duration": 1116,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "expect((await response).body).to.haveOwnProperty('nessage')",
+              "err": {
+                "message": "AssertionError: expected { code: 200, type: 'unknown', …(1) } to have own property 'nessage'",
+                "estack": "AssertionError: expected { code: 200, type: 'unknown', …(1) } to have own property 'nessage'\n    at Context.<anonymous> (test\\chaiAssert.js:24:42)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)",
+                "diff": null
+              },
+              "uuid": "a70dee30-9130-4d19-a81e-11ea1355ff3c",
+              "parentUUID": "ff17cca8-e406-4c2c-a2a0-18856719d3db",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a70dee30-9130-4d19-a81e-11ea1355ff3c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1116,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
